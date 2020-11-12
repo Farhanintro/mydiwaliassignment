@@ -6,4 +6,11 @@ function setHalfVolume() {
     vid.volume = 0.6;
 }
 
-//   background music script end
+//   background music script start
+
+var backmusic = document.getElementById("backmp3");
+
+function playsound() { 
+  backmusic.play(); 
+} 
+

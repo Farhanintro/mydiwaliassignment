@@ -9,6 +9,6 @@ function setHalfVolume() {
 //   background music script start;
 
 function playsound() { 
-  alert("hey");
+  vid.play();
 } 
 

@@ -6,4 +6,9 @@ function setHalfVolume() {
     vid.volume = 0.6;
 }
 
-//   background music script end
+//   background music script start;
+
+function playsound() { 
+  vid.play(); 
+} 
+

@@ -2,6 +2,8 @@
 /* google fonts link for credit  */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 /* google font link for wishing section */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* arena logo font */
 
 
 * {
@@ -28,13 +30,13 @@
 }
 
 .layer_01 {
-    width: 50vw;
+    width: 45vw;
     height: auto;
     animation: rotate 60s infinite reverse linear;
 }
 
 .layer_02 {
-    width: 40vw;
+    width: 35vw;
     height: auto;
     animation: rotate 50s infinite linear;
 }
@@ -49,6 +51,36 @@
     position: absolute;
 }
 
+/* arena animation logo */
+
+.arena_logo{
+    color: white;
+    width: 120px;
+    height: 56px;
+    border-radius: 3px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.arena_inner{
+    /* position: absolute; */
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.arena_inner span{
+    background-color: yellow;
+    color: black;
+    width: 100vw;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
 /* wishing quotes section css */
 
 .wishing_quotes {
@@ -58,7 +90,15 @@
     left: 5%;
     font-family: 'Satisfy', cursive;
     font-size: 22px;
+    transition: 0.9s;
 }
+
+.wishing_quotes:hover {
+    font-size: 28px;
+    color: rgb(251, 255, 0);
+    cursor: pointer;
+}
+
 
 
 /* my credit css */
@@ -70,8 +110,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     font-size: 13px;
+
 }
 
+.my_credit a {
+    color: wheat;
+    text-decoration: none;
+}
 
 
 /* animaton css */

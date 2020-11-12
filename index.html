@@ -8,7 +8,7 @@
     <title>Happy Diwali From Farhan</title>
 </head>
 
-<body onload="setHalfVolume()">
+<body>
 
 
     <div class="container">
@@ -17,25 +17,35 @@
         <img src="imges/svg/1st.svg" class="layer layer_02" alt="">
         <img src="imges/ram-sita.png" class="layer layer_03" alt="">
 
+        <!-- Arena Logo -->
+        <div class="arena_logo">
+            <div class="arena_inner">
+                <h2>Arena <br> <span>Animation</span></h2>
+            </div>
+        </div>
+
         <!-- my credit -->
         <div class="my_credit">
-            <h3><small>Design by</small> Farhan Akhtar</h3>
+            <a href="https://github.com/Farhanintro" target="blank">
+                <h3 id="change_credit" onmouseover="credit_change()"><small>Design by</small> Farhan Akhtar</h3>
+            </a>
         </div>
 
 
         <!-- Wiahing quotes -->
-        <div class="wishing_quotes">
-            <h1 onmouseover="playsound()">Happy Diwali</h1>
+        <div class="wishing_quotes" onmouseover="confetti.toggle();">
+            <h1 onclick="setTimeout(playsound,);" ondblclick="setTimeout(stopsound,);">Happy Diwali</h1>
         </div>
 
         <!-- background audio file link -->
-        <audio controls id="backmp3" loop >
+        <audio id="backmp3">
             <source src="audio/background.mp3" type="audio/mp3">
         </audio>
-   
     </div>
 
     <script src="js/farhan.js"></script>
+    <script src="js/confetti.min.js"></script>
+
 </body>
 
 </html>

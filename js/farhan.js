@@ -9,6 +9,17 @@ function setHalfVolume() {
 //   background music script start;
 
 function playsound() { 
-  vid.play(); 
+  vid.play();
 } 
 
+function stopsound(){
+  vid.pause();
+}
+
+// my credit change script
+
+var credit = document.getElementById("change_credit");
+
+function credit_change(){
+  credit.innerHTML = "Check Out My Github Profile &#8608;"
+}
